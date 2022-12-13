@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Handson DOM</title>
+</head>
+<body>
+    <p id="text">Write the code to access element which is having id as "text"</p>
+    <pre>document.getElementById('#text').innerHTML='js hanson'</pre><br><br>
+    <p>Write the code to access element which is having tag as "h1"</p>
+    <pre>document.getElementsByName('h1').innerHTML='js handson'</pre><br><br>
+    <p>Write the code to access element which is having class as "box"</p>
+    <pre>document.getElementsByClassName('.box').innerHTML='Js handson'</pre><br><br>
+    <p>"<h1>Hello </h1>
+
+        Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</p>
+    <pre>Document.getElementByTagName('#text').innerHTML='Js handson'</pre>
+
+    <div id="class1">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <button id="button" onclick="onbuttonclick()">Click Here</button>
+    <pre>function onbuttonclick(){
+        var flex= document.getElementsByID('#class1')
+        if(flex.style.flexDirection = "row"){
+            flex.style.flexDirection = "coloum"
+            console.log('coloum')
+        }
+        else{
+            flex.style.flexDirection = "row";
+            console.log('row');
+        }
+    }</pre>
+
+    <script src="./main.js"></script>
+</body>
+</html>
